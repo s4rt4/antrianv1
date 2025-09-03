@@ -54,34 +54,6 @@ It can run directly in any modern browser and is suitable for **thesis projects,
 
 ---
 
-## 📂 Project Structure
-
-antrianv1/
-│
-├── index.html # User page
-├── login.html # Admin login page
-├── admin.html # Admin dashboard (queue caller)
-│
-├── css/
-│ └── style.css # Styling (blue navbar, buttons, dark/light mode, etc.)
-│
-├── js/
-│ ├── index.js # User page logic
-│ ├── login.js # Login logic
-│ └── admin.js # Admin logic + audio system
-│
-└── sounds/ # Audio files (MP3)
-├── antrian-nomor.mp3
-├── belumadaantrian.mp3
-├── antrianhabis.mp3
-├── satu.mp3, dua.mp3, tiga.mp3 ... sembilanbelas.mp3
-├── duapuluh.mp3, tigapuluh.mp3 ... sembilanpuluh.mp3
-├── seratus.mp3, duaratus.mp3 ... limaratus.mp3
-└── etc.
-
-
----
-
 ## ⚙️ Technologies Used
 - **Frontend**:
   - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)  
@@ -126,3 +98,4 @@ Advantages:
    ```bash
    git clone https://github.com/s4rt4/antrianv1
    cd antrianv1
+

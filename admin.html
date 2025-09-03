@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Pemanggil Antrian</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <i class="fa-solid fa-headset"></i> Admin — Pemanggil Antrian
+    </div>
+    <div class="nav-right">
+      <span id="clockAdmin"></span>
+      <button id="logoutBtn" class="nav-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Kontrol Pemanggilan</h2>
+      <div class="row">
+        <button id="callBtn" class="primary big"><i class="fa-solid fa-bullhorn"></i> Panggil Antrian</button>
+        <button id="repeatBtn" class="secondary big"><i class="fa-solid fa-volume-high"></i> Ulangi Panggilan</button>
+      </div>
+
+      <div class="row small">
+        <label for="maxTickets">Jumlah tiket per hari</label>
+        <input id="maxTickets" type="number" min="1" step="1" style="width:120px;">
+        <button id="saveMaxBtn" class="secondary"><i class="fa-solid fa-save"></i> Simpan</button>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat"><div class="stat-title">Terakhir Dipanggil</div><div id="adminLastCalled" class="stat-value">—</div></div>
+        <div class="stat"><div class="stat-title">Terakhir Diambil</div><div id="adminLastTaken" class="stat-value">—</div></div>
+        <div class="stat"><div class="stat-title">Tiket Tersisa</div><div id="adminRemaining" class="stat-value">—</div></div>
+      </div>
+
+      <div class="row small">
+        <button id="resetBtn" class="secondary"><i class="fa-solid fa-rotate-left"></i> Reset Antrian</button>
+        <a href="index.html" class="secondary"><i class="fa-solid fa-arrow-left"></i> Halaman User</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
